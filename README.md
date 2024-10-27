@@ -2,7 +2,7 @@
 
 
 # Overview
-The Expense Tracker is a simple command-line application designed to help users manage and track their expenses. Users can view a table of their expenses, add new entries, calculate the sum of transactions within a specified date range, and interact with an AI assistant for queries related to their expense data.
+This revised Expense Tracker program is a simple command-line application designed to help users manage and track their expenses. With simple modifications and integration of AI model, it helps user get facilitation in managing and tracking expenses. 
 
 # Features
 1. Show Table: Display a table of recorded expenses.
