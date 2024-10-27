@@ -2,7 +2,7 @@
 
 
 # Overview
-This revised Expense Tracker program is a simple command-line application designed to help users manage and track their expenses. With simple modifications and integration of AI model, it helps user get facilitation in managing and tracking expenses. 
+This revised Expense Tracker program is a simple command-line application designed to help users manage and track their expenses. With simple modifications and integration of AI model, it gives user more facilitation in managing and tracking expenses. 
 
 # Features
 1. Show Table: Display a table of recorded expenses.
