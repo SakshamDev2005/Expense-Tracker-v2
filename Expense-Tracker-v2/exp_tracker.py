@@ -5,6 +5,7 @@ import sys
 from langchain_anthropic import ChatAnthropic
 from langchain.document_loaders import DataFrameLoader
 from langchain_core.prompts import ChatPromptTemplate
+from langchain.chains import LLMChain
 
 class Exp_Tracker:
     def __init__(self):
@@ -95,11 +96,11 @@ class Exp_Tracker:
         Output: 
         """
 
-        prompt_template = ChatPromptTemplate.from_messages( [("system", prompt)])
-        formatted_prompt = prompt_template.format(data = documents, question = self.user_input)
-        chain = prompt_template | model
-        response = chain.invoke(formatted_prompt)  
-        print(response)  
+        prompt_template = ChatPromptTemplate.from_template(prompt)
+        chain = LLMChain(llm=model, prompt=prompt_template)
+    
+        response = chain.run({"data": documents, "question": self.user_input})
+        print(response)
         
         self.page()
 
